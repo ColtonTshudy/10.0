@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "KiCad") (type "Table") (uri "C:/Program Files/KiCad/10.0/share/kicad/template/fp-lib-table") (options "") (descr "KiCad Default Libraries"))
+	(lib (name "ct_lib") (type "KiCad") (uri "${CT_KICAD_LIBRARY}/footprints/ct_lib.pretty") (options "") (descr ""))
+)

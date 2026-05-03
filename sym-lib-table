@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "KiCad") (type "Table") (uri "C:/Program Files/KiCad/10.0/share/kicad/template/sym-lib-table") (options "") (descr "KiCad Default Libraries"))
+	(lib (name "ct_lib") (type "KiCad") (uri "${CT_KICAD_LIBRARY}/symbols/ct_lib.kicad_sym") (options "") (descr ""))
+)
