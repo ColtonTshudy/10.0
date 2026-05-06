@@ -67,6 +67,10 @@
       {
         "name": "CD_FER's KiCad repository",
         "url": "https://raw.githubusercontent.com/CDFER/cd_fer-kicad-repository/main/repository.json"
+      },
+      {
+        "name": "Bouni's KiCad repository",
+        "url": "https://raw.githubusercontent.com/Bouni/bouni-kicad-repository/main/repository.json"
       }
     ]
   },
@@ -96,33 +100,38 @@
     "check_for_kicad_updates": true,
     "check_for_updates": 2,
     "file_history": [
+      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\bms-logic\\battery-node.kicad_pro",
+      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\bms-power\\bms-power.kicad_pro",
+      "C:\\Users\\Tshud\\Downloads\\for later\\bms-logic\\battery-node.kicad_pro",
       "H:\\Documents_H\\KiCad\\Projects\\battery-node\\battery-node.kicad_pro"
     ],
     "first_run_shown": false,
-    "last_design_block_lib_dir": "",
+    "last_design_block_lib_dir": "C:\\Users\\Tshud\\Documents\\KiCad\\10.0\\blocks",
     "last_imperial_units": 0,
     "last_metric_units": 1,
     "last_received_update": "10.0.1",
-    "last_update_check_time": "2026-05-03T09:04:10",
+    "last_update_check_time": "2026-05-06T01:41:09",
     "max_undo_items": 0,
     "open_projects": [
-      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\battery-node.kicad_pro"
+      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\bms-logic\\battery-node.kicad_pro"
     ],
     "show_import_issues": true,
     "units": 1
   },
   "template": {
     "filter": 0,
-    "last_used": "",
-    "recent_templates": [],
+    "last_used": "C:\\Users\\Tshud\\kicad\\template\\default",
+    "recent_templates": [
+      "C:\\Users\\Tshud\\kicad\\template\\default"
+    ],
     "window": {
       "pos": {
-        "x": -1,
-        "y": -1
+        "x": 1080,
+        "y": 571
       },
       "size": {
-        "height": -1,
-        "width": -1
+        "height": 592,
+        "width": 756
       }
     }
   },
@@ -382,12 +391,12 @@
       "user_grid_y": "10 mil"
     },
     "maximized": false,
-    "mru_path": "H:\\Documents_H\\KiCad\\Projects\\battery-node\\",
+    "mru_path": "H:\\Documents_H\\KiCad\\Projects\\battery-node\\bms-logic\\",
     "perspective": "",
-    "pos_x": 803,
-    "pos_y": 370,
-    "size_x": 954,
-    "size_y": 652,
+    "pos_x": -8,
+    "pos_y": 0,
+    "size_x": 2576,
+    "size_y": 1408,
     "zoom_factors": [
       0.13,
       0.22,

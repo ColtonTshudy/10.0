@@ -1,22 +1,39 @@
 {
-  "action_plugins": [],
+  "DRC": {
+    "crossprobe": true,
+    "report_all_track_errors": false,
+    "scroll_on_crossprobe": true
+  },
+  "action_plugins": [
+    {
+      "C:\\Users\\Tshud\\Documents\\KiCad\\10.0\\3rdparty\\plugins\\com_github_bouni_kicad-jlcpcb-tools\\plugin.py/JLCPCBPlugin": true
+    },
+    {
+      "C:\\Users\\Tshud\\Documents\\KiCad\\10.0\\3rdparty\\plugins\\com_github_jvanderberg_kicad-jlcimport\\plugin.py/JLCImportPlugin": true
+    }
+  ],
   "appearance": {
-    "color_theme": "user"
+    "color_theme": "user",
+    "custom_toolbars": false
   },
   "aui": {
     "appearance_expand_layer_display": false,
     "appearance_expand_net_display": false,
     "appearance_panel_tab": 0,
+    "design_blocks_panel_docked_width": 770,
+    "design_blocks_panel_float_height": -1,
+    "design_blocks_panel_float_width": -1,
+    "design_blocks_show": false,
     "net_inspector_width": -1,
-    "properties_panel_width": 20,
+    "properties_panel_width": 300,
     "properties_splitter_proportion": 0.5,
     "right_panel_width": 220,
     "search_panel_dock_direction": 3,
     "search_panel_height": 110,
-    "search_panel_width": 284,
+    "search_panel_width": 1964,
     "show_layer_manager": true,
     "show_net_inspector": false,
-    "show_properties": false,
+    "show_properties": true,
     "show_search": false
   },
   "cleanup": {
@@ -34,8 +51,26 @@
   "cross_probing": {
     "auto_highlight": true,
     "center_on_items": true,
+    "flash_selection": false,
     "on_selection": true,
     "zoom_to_fit": true
+  },
+  "design_block_chooser": {
+    "height": 595,
+    "keep_annotations": false,
+    "lib_tree": {
+      "column_widths": {
+        "Description": 600,
+        "Item": 300
+      }
+    },
+    "place_as_group": true,
+    "place_as_sheet": false,
+    "repeated_placement": false,
+    "sash_pos_h": 385,
+    "sash_pos_v": 403,
+    "sort_mode": 0,
+    "width": 770
   },
   "drc_dialog": {
     "refill_zones": false,
@@ -52,8 +87,9 @@
     "flip_left_right": true,
     "magnetic_all_layers": false,
     "magnetic_graphics": true,
-    "magnetic_pads": 1,
-    "magnetic_tracks": 1,
+    "magnetic_pads": 2,
+    "magnetic_tracks": 2,
+    "pcb_angle_snap_mode": 1,
     "pcb_use_45_degree_limit": false,
     "polar_coords": false,
     "rotation_angle": 900,
@@ -66,6 +102,9 @@
     "precision": 6,
     "units": 0,
     "version": 1
+  },
+  "export_d356": {
+    "doNotExportUnconnectedPads": false
   },
   "export_idf": {
     "auto_adjust": false,
@@ -129,9 +168,14 @@
     "width": 1192
   },
   "footprint_viewer": {
+    "aui_state": {
+      "format": "kicad.wxaui",
+      "version": 1
+    },
     "autozoom": true,
     "cursor": {
       "always_show_cursor": false,
+      "cross_hair_mode": 0,
       "fullscreen_cursor": false
     },
     "display": 0,
@@ -274,10 +318,10 @@
     },
     "lib_list_width": 200,
     "maximized": false,
-    "mru_path": "C:\\Users\\Tshud\\Documents\\KiCad\\9.0\\projects",
-    "perspective": "layout2|",
-    "pos_x": 51,
-    "pos_y": 55,
+    "mru_path": "C:\\Users\\Tshud\\Documents\\KiCad\\10.0\\projects",
+    "perspective": "",
+    "pos_x": 286,
+    "pos_y": 286,
     "size_x": 1192,
     "size_y": 915,
     "zoom": 1.0,
@@ -303,8 +347,10 @@
     ]
   },
   "footprint_wizard": {
+    "aui_state": null,
     "cursor": {
       "always_show_cursor": false,
+      "cross_hair_mode": 0,
       "fullscreen_cursor": false
     },
     "display": 0,
@@ -516,8 +562,7 @@
       "Description"
     ],
     "open_libs": [
-      "-- Recently Used --",
-      "Jumper"
+      "ct_lib"
     ]
   },
   "meta": {
@@ -545,6 +590,7 @@
     "pad_clearance": true,
     "pad_fill": true,
     "pad_numbers": true,
+    "pad_use_via_color_for_normal_th_padstacks": false,
     "ratsnest_curved": false,
     "ratsnest_footprint": true,
     "ratsnest_global": true,
@@ -584,13 +630,18 @@
     "actions": []
   },
   "printing": {
+    "as_item_checkboxes": false,
     "background": false,
     "color_theme": "",
+    "drill_marks": 1,
+    "edge_cuts_on_all_pages": true,
     "layers": [
       38,
       44
     ],
+    "mirror": false,
     "monochrome": true,
+    "pagination": 1,
     "scale": 4.0,
     "title_block": false,
     "use_theme": false
@@ -613,28 +664,29 @@
   },
   "search_pane": {
     "search_hidden_fields": true,
+    "search_metadata": false,
     "selection_zoom": 1
   },
   "system": {
     "file_history": [
-      "H:/Documents_H/KiCad/Projects/battery-node/battery-node.kicad_pcb",
+      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\bms-logic\\battery-node.kicad_pcb",
+      "H:\\Documents_H\\KiCad\\Projects\\battery-node\\battery-node.kicad_pcb",
       "H:/Documents_H/KiCad/moped-controller/moped-controller/moped-controller.kicad_pcb",
       "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/Rear Projection Clock S9012/Rear Projection Clock S9012 GP.kicad_pcb",
       "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/IncandescentClock/IncandescentClock-DESKTOP-7KUMGT8.kicad_pcb",
       "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/IncandescentClock/IncandescentClock (fabric).kicad_pcb",
       "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/IncandescentClock/IncandescentClock-TESTING.kicad_pcb",
       "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/IncandescentClock/IncandescentClock.kicad_pcb",
-      "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/Nixie/NixieWatch.kicad_pcb",
-      "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/LEDDisplay/LEDDisplay.kicad_pcb"
+      "C:/Users/Tshud/OneDrive/Engineering/KiCad Files/projects/Nixie/NixieWatch.kicad_pcb"
     ],
     "first_run_shown": true,
-    "last_footprint3d_dir": "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\3dmodels\\",
-    "last_footprint_lib_dir": "C:\\Users\\Tshud\\Documents\\GitHub\\ct-lib-kicad\\footprints",
-    "last_imperial_units": 0,
+    "last_footprint3d_dir": "${CT_KICAD_LIBRARY}/3d",
+    "last_footprint_lib_dir": "C:\\Users\\Tshud\\AppData\\Roaming\\kicad\\10.0\\3rdparty\\JLCImport.pretty",
+    "last_imperial_units": 5,
     "last_metric_units": 1,
     "max_undo_items": 0,
     "show_import_issues": true,
-    "units": 1
+    "units": 5
   },
   "tools": {
     "pns": {
@@ -658,8 +710,8 @@
       "shove_vias": true,
       "smart_pads": true,
       "smooth_dragged_segments": true,
-      "snap_to_pads": false,
-      "snap_to_tracks": false,
+      "snap_to_pads": true,
+      "snap_to_tracks": true,
       "start_diagonal": false,
       "suggest_finish": false,
       "via_force_prop_iteration_limit": 40,
@@ -668,8 +720,340 @@
     }
   },
   "window": {
+    "aui_state": {
+      "format": "kicad.wxaui",
+      "panes": [
+        {
+          "dock": {
+            "direction": 1,
+            "layer": 1,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 0
+          },
+          "hidden": true,
+          "meta": {
+            "center": false,
+            "class_name": "wxControl",
+            "index": 0,
+            "notebook": false,
+            "toolbar": false,
+            "window_name": "panel"
+          },
+          "name": "InfoBar"
+        },
+        {
+          "dock": {
+            "direction": 1,
+            "layer": 6,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 34
+          },
+          "meta": {
+            "center": false,
+            "class_name": "wxAuiToolBar",
+            "index": 1,
+            "notebook": false,
+            "toolbar": true,
+            "window_name": "control"
+          },
+          "name": "TopMainToolbar"
+        },
+        {
+          "dock": {
+            "direction": 1,
+            "layer": 5,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 34
+          },
+          "meta": {
+            "center": false,
+            "class_name": "wxAuiToolBar",
+            "index": 2,
+            "notebook": false,
+            "toolbar": true,
+            "window_name": "control"
+          },
+          "name": "TopAuxToolbar"
+        },
+        {
+          "dock": {
+            "direction": 3,
+            "layer": 6,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 30
+          },
+          "meta": {
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 3,
+            "notebook": false,
+            "toolbar": false,
+            "window_name": "panel"
+          },
+          "name": "MsgPanel"
+        },
+        {
+          "dock": {
+            "direction": 4,
+            "layer": 3,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 34
+          },
+          "meta": {
+            "center": false,
+            "class_name": "wxAuiToolBar",
+            "index": 4,
+            "notebook": false,
+            "toolbar": true,
+            "window_name": "control"
+          },
+          "name": "LeftToolbar"
+        },
+        {
+          "dock": {
+            "direction": 2,
+            "layer": 3,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 34
+          },
+          "meta": {
+            "center": false,
+            "class_name": "wxAuiToolBar",
+            "index": 5,
+            "notebook": false,
+            "toolbar": true,
+            "window_name": "control"
+          },
+          "name": "RightToolbar"
+        },
+        {
+          "dock": {
+            "direction": 2,
+            "layer": 4,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 220
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "size": {
+                "height": 480,
+                "width": 220
+              }
+            }
+          },
+          "meta": {
+            "caption": "Appearance",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 6,
+            "notebook": false,
+            "toolbar": false
+          },
+          "name": "LayersManager"
+        },
+        {
+          "dock": {
+            "direction": 2,
+            "layer": 4,
+            "position": 1,
+            "proportion": 0,
+            "row": 0,
+            "size": 220
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "size": {
+                "height": 100,
+                "width": 190
+              }
+            }
+          },
+          "meta": {
+            "caption": "Selection Filter",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 7,
+            "notebook": false,
+            "toolbar": false
+          },
+          "name": "SelectionFilter"
+        },
+        {
+          "dock": {
+            "direction": 2,
+            "layer": 5,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 0
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": 50,
+                "y": 200
+              },
+              "size": {
+                "height": 600,
+                "width": 800
+              }
+            }
+          },
+          "hidden": true,
+          "meta": {
+            "caption": "Design Blocks",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 8,
+            "notebook": false,
+            "toolbar": false,
+            "window_name": "Design Blocks"
+          },
+          "name": "DesignBlocks"
+        },
+        {
+          "dock": {
+            "direction": 4,
+            "layer": 5,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 300
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "size": {
+                "height": 200,
+                "width": 300
+              }
+            }
+          },
+          "meta": {
+            "caption": "Properties",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 9,
+            "notebook": false,
+            "toolbar": false,
+            "window_name": "panel"
+          },
+          "name": "PropertiesManager"
+        },
+        {
+          "dock": {
+            "direction": 5,
+            "layer": 0,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 386
+          },
+          "meta": {
+            "center": true,
+            "class_name": "wxWindow",
+            "index": 10,
+            "notebook": false,
+            "toolbar": false,
+            "window_name": "panel"
+          },
+          "name": "DrawFrame"
+        },
+        {
+          "dock": {
+            "direction": 3,
+            "layer": 0,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 0
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "size": {
+                "height": 200,
+                "width": 300
+              }
+            }
+          },
+          "hidden": true,
+          "meta": {
+            "caption": "Net Inspector",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 11,
+            "notebook": false,
+            "toolbar": false
+          },
+          "name": "NetInspector"
+        },
+        {
+          "dock": {
+            "direction": 3,
+            "layer": 0,
+            "position": 0,
+            "proportion": 0,
+            "row": 0,
+            "size": 0
+          },
+          "floating": {
+            "rect": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "size": {
+                "height": 200,
+                "width": 480
+              }
+            }
+          },
+          "hidden": true,
+          "meta": {
+            "caption": "Search",
+            "center": false,
+            "class_name": "wxPanel",
+            "index": 12,
+            "notebook": false,
+            "toolbar": false
+          },
+          "name": "Search"
+        }
+      ],
+      "version": 1
+    },
     "cursor": {
       "always_show_cursor": false,
+      "cross_hair_mode": 0,
       "fullscreen_cursor": false
     },
     "display": 0,
@@ -678,7 +1062,7 @@
       "axes_enabled": false,
       "fast_grid_1": 0,
       "fast_grid_2": 0,
-      "last_size": 9,
+      "last_size": 6,
       "line_width": 0.5,
       "min_spacing": 10.0,
       "override_connected": false,
@@ -817,7 +1201,7 @@
     },
     "maximized": true,
     "mru_path": "C:\\Users\\Tshud\\Documents",
-    "perspective": "layout2|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1016;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=AuxToolbar;caption=;state=139644;dir=1;layer=5;row=0;pos=0;prop=100000;bestw=853;besth=34;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=384;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OptToolbar;caption=;state=139596;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=664;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=34;besth=736;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayersManager;caption=Appearance;state=1532;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=220;besth=-1;minw=200;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=220;floath=480|name=SelectionFilter;caption=Selection Filter;state=1532;dir=2;layer=4;row=0;pos=1;prop=0;bestw=190;besth=-1;minw=190;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=190;floath=100|name=PropertiesManager;caption=Properties;state=2098686;dir=4;layer=5;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=384;besth=158;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=NetInspector;caption=Net Inspector;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=200|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=100;minw=180;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=34|dock_size(1,5,0)=34|dock_size(3,6,0)=30|dock_size(4,3,0)=34|dock_size(2,3,0)=34|dock_size(2,4,0)=220|dock_size(5,0,0)=386|",
+    "perspective": "",
     "pos_x": -8,
     "pos_y": -8,
     "size_x": 2576,

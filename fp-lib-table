@@ -2,4 +2,6 @@
 	(version 7)
 	(lib (name "KiCad") (type "Table") (uri "C:/Program Files/KiCad/10.0/share/kicad/template/fp-lib-table") (options "") (descr "KiCad Default Libraries"))
 	(lib (name "ct_lib") (type "KiCad") (uri "${CT_KICAD_LIBRARY}/footprints/ct_lib.pretty") (options "") (descr ""))
+	(lib (name "JLCImport") (type "KiCad") (uri "${KICAD10_3RD_PARTY}/JLCImport.pretty") (options "") (descr ""))
+	(lib (name "PCM_JLCPCB") (type "KiCad") (uri "H:/Documents_H/KiCad/Libraries/JLCPCB-KiCad-Library-2026.05.03/footprints/JLCPCB.pretty") (options "") (descr ""))
 )
